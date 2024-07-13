@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.work-main{
+    margin-top: 50px;
+}
+
+.workCardContainer > h1{
+    font-size: 5.5rem;
+    letter-spacing: 2px;
+    color: #A0E7A7;
+    font-family: "8BitArcade";
+    text-align: center;
+    margin-top: 8%;
+}
+
+.workCardContainer{
+    /* border: 2px solid rebeccapurple; */
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.workCardsSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* --------  Responsiveness -------- */
+
+@media (max-width: 425px) {
+    .workCardContainer > h1{
+        font-size: 3rem;
+    }
+}

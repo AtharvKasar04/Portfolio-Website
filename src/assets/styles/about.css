@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-main{
+    margin-top: 50px;
+}
+
+.aboutContainer > h1{
+    font-size: 5.5rem;
+    letter-spacing: 2px;
+    color: #A0E7A7;
+    font-family: "8BitArcade";
+    text-align: center;
+    margin-top: 8%;
+}
+
+.aboutContainer{
+    text-align: center;
+    /* border: 2px solid orange; */
+}
+
+.aboutSection{
+    /* border: 2px solid gray; */
+    width: 90%;
+    margin: 10px auto;
+    padding: 18px;
+    text-align: center;
+}
+
+.aboutPara{
+    color: white;
+    font-family: robotoBold;
+    letter-spacing: 0.3px;
+    width: 75%;
+    margin: 0px auto;
+}
+
+#contactText{
+    color: white;
+    font-family: robotoBold;
+    margin-top: 4px;
+    text-shadow: 0px 0px 12px #A0E7A7;
+}
+
+#emailText{
+    color: #A0E7A7;
+    font-family: robotoBold;
+    transition: 0.5s ease;
+}
+#emailText:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.educationSub-title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 28px;
+    align-items: center;
+}
+
+.educationSub-title > h6{
+    color: #A0E7A7;
+    font-family: robotoBold;
+    font-size: 1.5rem;
+}
+
+.straightLine{
+    width: 25%;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+}
+
+.educationData{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eduDetail{
+    /* border: 2px solid white; */
+    /* border-bottom: 2px solid #FFD600; */
+    box-shadow: 2px 2px 3px #A0E7A7;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.eduDetail > h2{
+    font-family: robotoBold;
+    color: white;
+}
+
+.eduDetail > h2 > span{
+    color: #A0E7A7;
+    margin: 8px;
+}
+
+.eduDetail > p{
+    color: #DCDCDC;
+    font-family: robotoRegular;
+}
+
+.technologies{
+    width: fit-content;
+    margin: 10px auto;
+}
+
+.technologies > h3{
+    color: white;
+    font-family: robotoBold;
+    font-size: 1.5rem;
+}
+
+.technologiesSection{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.technologyItem{
+    font-family: Quantify;
+    color: black;
+    font-size: 1rem;
+    background-color: white;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 1px #A0E7A7;
+}
+
+.technologyItem:hover{
+    cursor: pointer;
+    background-color: #A0E7A7;
+    box-shadow: 0px 0px;
+}
+
+@media (max-width: 426px) {
+    .aboutContainer > h1{
+        font-size: 3.3rem;
+    }
+
+    .aboutPara{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .eduDetail > h2{
+        font-size: 1rem;
+    }
+
+    .eduDetail > p{
+        font-size: 0.8rem;
+    }
+
+    .technologyItem{
+        font-size: 0.8rem;
+    }
+}

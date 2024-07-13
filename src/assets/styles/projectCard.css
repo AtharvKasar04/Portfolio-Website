@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.image-div > img{
+    /* width: 250px; */
+    width: 100%;
+    border-radius: 15px;
+}
+
+.project-card{
+    border: 2px solid #A0E7A7;
+    text-align: center;
+    width: 22%;
+    margin: 20px 18px;
+    padding: 18px;
+    background-color: #141617;
+    box-shadow: 2px 2px 1px #A0E7A7;
+    border-radius: 20px;
+    height:480px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.01);
+}
+
+.projectDetails > h4{
+    color: white;
+    font-family: robotoBold;
+    font-size: 1.6rem;
+    color: #FFD600;
+    margin-top: 10px;
+}
+
+.projectDetails > p{
+    color: #B2B2B2;
+    font-family: robotoBold;
+    padding: 12px;
+    text-align: left;
+}
+
+.techStack{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25%;
+}
+
+.tech-item{
+    background-color: #A0E7A7;
+    margin: 4px 4px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: black;
+    font-family: quantify;
+    font-size: 0.8rem;
+    letter-spacing: 0.2px;
+}
+
+.githubButton, .githubButtonTrue{
+    outline: none;
+    border: none;
+    background-color: #4462AF;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 10px;
+    font-family: robotoRegular;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.1s ease-in-out;
+}
+
+.githubButton:hover,  .githubButtonTrue:hover{
+    cursor: pointer;
+    background-color: #3555a7;
+    border-radius: 6px;
+}
+
+/* -------- responsiveness ------- */
+
+@media (max-width: 426px) {
+    .project-card{
+        width: 75%;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 426px) {
+    .project-card{
+        width: 50%;
+        height: fit-content;
+    }
+}
+
+.card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .card.card.fade-in:hover{
+    transform: translateY(-10px);
+  }
+
+/* Header css accidental inclusion in this CSS */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    width: 20px;
+    height: 2px;
+    background-color: #FFD600;
+    margin: 2px;
+    transition: 0.4s;
+  }
+
+  @keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 425px) {
+    .navbarList {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #161616;
+      max-height: 0px;
+      transition: 0.6s ease-in-out;
+      overflow: hidden;
+    }
+  
+    .navbarList.active {
+      max-height: 500px;
+    }
+
+    .navbarList.active .navLink{
+        opacity: 1;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .navLink {
+      margin: 4px auto;
+      opacity: 0; /* Start hidden */
+      transition: 0.6s ease-in-out;
+    }
+
+    .navbarList.active .navLink:nth-child(odd) {
+        animation: fadeInFromLeft 0.6s forwards;
+      }
+    
+      .navbarList.active .navLink:nth-child(even) {
+        animation: fadeInFromRight 0.6s forwards;
+      }
+  }

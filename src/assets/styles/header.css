@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+.navLink{
+    text-decoration: none;
+    list-style: none;
+    font-family: "robotoBold";
+    color: white;
+    padding: 8px 14px;
+}
+
+.navbarList{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    /* border: 2px solid red; */
+    padding: 10px 0px;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 2px solid red; */
+    background-color: rgba(0, 0, 0, 0.619);
+    width: 100%;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+
+.navLink a.active{
+    border-bottom: 2px solid yellow;
+}
+
+.navLink a:hover{
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}

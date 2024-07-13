@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cardContainer > h1{
+    font-size: 5.5rem;
+    letter-spacing: 2px;
+    color: #A0E7A7;
+    font-family: "8BitArcade";
+    text-align: center;
+    margin-top: 3%;
+}
+
+/* #projects-main{
+    border: 2px solid green; 
+     height: 100vh;
+} */
+
+.cardsSection{
+    width: 95%;
+    /* border: 2px solid yellow; */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.viewAllProjectsButton{
+    padding: 10px 24px;
+    outline: none;
+    background-color: #A0E7A7;
+    border: none;
+    border-radius: 6px;
+    font-family: robotoBold;
+    font-size: 1rem;
+    transition: 0.1s;
+}
+
+.viewAllProjectsButton:hover{
+    cursor: pointer;
+    background-color: #90e499;
+}
+
+.buttonSection{
+    margin: 0px auto;
+    width: fit-content;
+}
+
+/* -------- responsiveness  -------- */
+
+@media (max-width: 426px) {
+    .cardContainer > h1{
+        font-size: 3.3rem;
+    }
+
+    .cardsSection{
+        width: 100%;
+    }
+}
